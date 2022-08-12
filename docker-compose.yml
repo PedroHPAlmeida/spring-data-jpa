@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_ROOT_USERNAME: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - /home/pedro/Documentos/cursos/spring-data-jpa/spring-data/data:/var/lib/mysql
