@@ -16,4 +16,12 @@ public class Cargo {
     private Integer id;
     private String descricao;
 
+    @Override
+    public String
+    toString() {
+        return "Cargo{" +
+                "id=" + id +
+                ", descricao='" + descricao + '\'' +
+                '}';
+    }
 }
